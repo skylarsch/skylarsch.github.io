@@ -1,0 +1,22 @@
+---
+layout: main
+title: Blog
+---
+
+<div class="posts">
+  {% for post in site.posts limit: 10 %}
+    <div class="post">
+      <div class="meta">{{ post.date | date_to_string }}</div>
+      <div class="title">
+        <a href="{{ post.url }}">
+        {{ post.title }}
+        </a>
+      </div>
+      <div class="body">{{ post.content }}</div>
+    </div>
+  {% endfor %}
+</div>
+
+<div class="archive_link">
+  <a href="/archive.html">&mdash; More Posts &mdash;</a>
+</div>

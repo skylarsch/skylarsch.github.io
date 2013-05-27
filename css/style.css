@@ -1,0 +1,173 @@
+html {
+  margin: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica ,sans-serif;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+
+.content {
+  margin: 400px auto 0 auto;
+  z-index: 2;
+  background-color: inherit;
+  position: relative;
+  padding: 20px 0 20px 0;
+}
+.content .body {
+  max-width: 600px;
+  margin: 0 auto 0 auto;
+}
+
+.header_image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("http://skylarsch.com.s3.amazonaws.com/images/san-diego.jpg");
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.image_class {
+  margin-top: 400px;
+}
+
+.post {
+  margin: 0 0 40px 0;
+}
+.post .title {
+  font-size: 24px; 
+}
+.post .title a {
+  color: black;
+  text-decoration: none; 
+}
+.post .meta {
+  color: #CBCBCB;
+  font-size: 12px;
+  margin: 10px 0 10px 0;
+}
+.post .meta .inner-meta {
+  padding-top: 9px;
+  float: left;
+}
+.post .body {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.post .body img {
+  max-width: 400px;
+  display: block;
+  margin: 10px auto 10px auto;
+  padding: 10px 0 10px 0;
+  border: solid 5px #EEEEEE;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+.post .body blockquote {
+  border: solid 0 #EEEEEE;
+  border-left-width: 5px;
+  padding-left: 20px;
+}
+.post .body a {
+  color: #555;
+}
+
+footer {
+  border: solid 0 #EEEEEE;
+  border-top-width: 2px;
+  background-color: #EAEAEA;
+}
+footer .content {
+  margin: 0 auto 0 auto;
+  max-width: 600px;
+}
+footer .avitar {
+  background-image: url("http://www.gravatar.com/avatar/9c08af7fde2b7ac630ea1f1ce412715e.jpg?s=256");
+  background-size: 100%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 20px;
+}
+footer .bio {
+  font-family: Helvetica ,sans-serif;
+  float: right;
+  width: 300px;
+  font-weight: 200px;
+  font-size: 14px;
+  font-style: italic;
+  color: #656565;
+}
+footer .info {
+  float: left;
+}
+footer .info .name {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+footer .info a {
+  text-decoration: none;
+}
+footer .info .link {
+  margin-bottom: 2px;
+}
+
+.home_icon {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: fixed;
+  right: 20px;
+  top: 50px;
+}
+
+.home_link {
+  background-color: inherit;
+  background-image: url("/images/home-gray.png");
+  background-size: 50%;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  border: solid 2px #EEE;
+  border-radius: 16px;
+}
+
+.clear {
+  clear: both;
+}
+
+.archive_link {
+  text-align: center;
+}
+
+.archive_title {
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.archive .year {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+}
+.archive .post-title span {
+  color: #AAA;
+}

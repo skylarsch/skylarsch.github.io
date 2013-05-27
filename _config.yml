@@ -1,0 +1,6 @@
+name: Skylar Schipper
+pygments: true
+markdown: redcarpet
+post:
+  template: post
+exclude: [Gemfile, Gemfile.lock, Rakefile]

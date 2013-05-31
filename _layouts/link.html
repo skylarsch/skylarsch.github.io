@@ -1,0 +1,19 @@
+---
+layout: main
+---
+
+<div class="post">
+  <div class="meta">
+    <a href="/">
+      <div class="home_link"></div>
+    </a>
+    <div class="inner-meta">{{ page.date | date_to_string }}</div>
+    <div class="clear"></div>
+  </div>
+  <div class="title">
+    <a href="{{ page.link }}">
+      {{ page.title }} &#8594;
+    </a>
+  </div>
+  <div class="body">{{ content }}</div>
+</div>

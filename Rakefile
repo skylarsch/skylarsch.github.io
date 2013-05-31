@@ -4,10 +4,13 @@ require 'fileutils'
 
 config = YAML.load_file("_config.yml")
 
-def post_content(title, include_date=true)
-  string = "---\nlayout: post\ntitle: \"#{title}\"\n"
+def post_content(title, include_date=true, layout="post", opts={})
+  string = "---\nlayout: #{layout}\ntitle: \"#{title}\"\n"
   if include_date
     string += "date: #{Time.now.strftime('%Y-%m-%d %H:%M:%S')}\n"
+  end
+  opts.each do |key, val|
+    string += "#{key}: #{val}\n"
   end
   string += "---\n\n"
   string
@@ -83,5 +86,29 @@ namespace :post do
     File.delete("_drafts/#{filename}")
 
     puts "Published #{title}"
+  end
+
+  task :link, :title, :link do |t, args|
+    title = args[:title]
+    link = args[:link]
+    editor = config["editor"]
+
+    if title.nil? or title.empty?
+      raise "Please add a title to your post."
+    end
+    if link.nil? or link.empty?
+      raise "Please add a link to your post."
+    end
+    puts "Creating new link post \"#{title}\""
+
+    date = Time.now.strftime("%Y-%m-%d")
+    filename = "#{date}-#{file_name_title(title)}.md"
+    if File.exists?("./_posts/#{filename}")
+      raise "Post already exists"
+    end
+    File.write("_posts/#{filename}", post_content(title, true, "link", {link: link}))
+    if editor && !editor.empty?
+      `open -a #{editor} _posts/#{filename}`
+    end
   end
 end

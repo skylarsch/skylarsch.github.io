@@ -23,3 +23,7 @@ If you're thinking about starting or running a service that will be sending larg
 Look at that! Each daily email in it's own place, where it should be.  The trick is just a simple `Time.now` or what have you.  Your users will thank you, I'll thank you, and the heavens will smile upon you with ever loving kindness.
 
 __TLDR;__ Put a date in daily email subjects.
+
+***
+
+EDIT (5/31/13):  Since I wrote this HockyApp has responded to my ticket and added a date/time to their daily report email subjects.

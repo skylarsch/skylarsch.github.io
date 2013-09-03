@@ -105,12 +105,13 @@ footer .avitar {
 }
 footer .bio {
   font-family: Helvetica ,sans-serif;
-  float: right;
-  width: 300px;
+  float: left;
+  width: 230px;
   font-weight: 200px;
   font-size: 14px;
   font-style: italic;
   color: #656565;
+  margin: 0 10px 0 10px;
 }
 footer .info {
   float: left;
@@ -124,6 +125,9 @@ footer .info a {
 }
 footer .info .link {
   margin-bottom: 2px;
+}
+footer .open-sky {
+  float: right;
 }
 
 .home_icon {

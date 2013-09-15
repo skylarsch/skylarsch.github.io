@@ -39,6 +39,10 @@ a:hover {
   top: 0;
   z-index: 1;
 }
+.header_desatruate_blur {
+  -webkit-filter: blur(5px);
+  -webkit-filter: saturate(20%)
+}
 
 .image_class {
   margin-top: 400px;

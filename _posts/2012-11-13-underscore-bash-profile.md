@@ -15,7 +15,7 @@ After some pondering I came up with a solution that couldn't be easier.
 
 `$ ln -s /path/to/dropbox/_bash_profile .bash_profile`
 
-This syncs your bash profiles using dropbox to all your computer devices.
+This syncs your bash profile using dropbox to all your computer devices.
 
 Some of the files I'm syncing include
 

@@ -9,7 +9,10 @@ Disclaimer: Don't do this
 ```
 
 ```
-*** Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'Auto Layout still required after executing -layoutSubviews. XXTableView's implementation of -layoutSubviews needs to call super.'
+*** Terminating app due to uncaught exception
+  'NSInternalInconsistencyException', reason: 
+  'Auto Layout still required after executing -layoutSubviews. 
+    XXTableView's implementation of -layoutSubviews needs to call super.'
 ```
 That error message had been spitting out of the console for the last hour, and I was tired of it.
 

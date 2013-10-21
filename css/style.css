@@ -28,6 +28,13 @@ a:hover {
   max-width: 580px;
   margin: 0 auto 0 auto;
 }
+pre {
+  max-width: 560px;
+  overflow: scroll;
+  border: 1px #DDDDDD solid;
+  border-radius: 5px;
+  padding: 10px;
+}
 
 .header_image {
   width: 100%;

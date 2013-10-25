@@ -32,4 +32,12 @@ So what does this do?
 
 `UITableView.m` contains the magic.  It's really rather simple, `+load` replaces the current `layoutSubviews` with the new method and replaces the new layout method with the old.  That's why we can call `[self xx_autoLayoutLayoutSubviews]` without making everything explode.  `xx_autoLayoutLayoutSubviews` calls itself but at runtime it will be calling the original implementation for the `layoutSubviews` method.  Then we call super.
 
-So far this seems to be working.  If anyone has better ideas, PLEASE [email me.](mailto:ss@schipp.co)
+<strike>So far this seems to be working.</strike>  If anyone has better ideas, PLEASE [email me.](mailto:ss@schipp.co)
+
+***
+
+_Edit 10-25-2013_
+
+So this failed miserably...  I don't know why but it causes major problems with the table view laying out it's content.  The cells all get laid out correctly, but the content size of the scroll view is never updated.  Table views would just bounce right back to the top after trying to scroll.
+
+Now we're just using bars and struts for the one case where we do this.

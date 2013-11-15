@@ -24,4 +24,12 @@ Much better!
 
 There is still quite a bit going on but ~50MB is much better than 250MB.
 
-Long story short, don't do this `self.transitionDelegate = self;`.  I breaks many things.
+Long story short, don't do this `self.transitionDelegate = self;`.  It breaks many things.
+
+***
+
+Edit: 11-12-13
+
+After some more investigating and hearing from a few people, I've decided that it's not my problem entirerly.  
+
+**RADAR** rdar://15450840

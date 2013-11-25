@@ -152,7 +152,8 @@ footer .open-sky {
 
 .home_link {
   background-color: inherit;
-  background-image: url("/images/home-gray.png");
+  font-size: 22px;
+  color: #CCC;
   background-size: 50%;
   width: 28px;
   height: 28px;
@@ -160,8 +161,15 @@ footer .open-sky {
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 10px;
-  border: solid 2px #EEE;
+  border: solid 2px #CCC;
   border-radius: 16px;
+}
+.home_link:hover {
+  color: #888;
+  border-color: #888;
+}
+.home_link i {
+  padding-left: 4px;
 }
 
 .clear {

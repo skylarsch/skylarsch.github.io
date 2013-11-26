@@ -1,9 +1,30 @@
 $(document).ready(function(){
   load_header_image();
+  bind_to_contact();
 
   $(window).scroll(perform_paralx_scroll);
 });
 
+function bind_to_contact() {
+  $('i._email').hover(function(){
+    $('div.email').css('color', _contact_hover_color());
+  }, _reset_contact_hover);
+  $('i._twitter').hover(function(){
+    $('div.twitter').css('color', _contact_hover_color());
+  }, _reset_contact_hover);
+  $('i._github').hover(function(){
+    $('div.github').css('color', _contact_hover_color());
+  }, _reset_contact_hover);
+  $('i._blog').hover(function(){
+    $('div.blog').css('color', _contact_hover_color());
+  }, _reset_contact_hover);
+}
+function _reset_contact_hover() {
+  $('div.letter').css('color', '#000');
+}
+function _contact_hover_color() {
+  return '#4D9FFC';
+}
 
 // performs the paralx scroll for the image header
 function perform_paralx_scroll() {

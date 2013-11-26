@@ -194,3 +194,21 @@ footer .open-sky {
 .archive .post-title span {
   color: #AAA;
 }
+
+.contact .letters_list {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.contact .letter {
+  float: left;
+}
+.contact .end-contact {
+  clear: both;
+}
+.contact i {
+  margin-right: 6px;
+  color: #333;
+}
+.contact i:hover {
+  color: #AAA;
+}

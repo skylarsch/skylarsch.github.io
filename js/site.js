@@ -50,9 +50,9 @@ function perform_paralx_scroll() {
 function load_header_image() {
   console.log('loading header image');
   var urls = [
-    'http://skylarsch.com.s3.amazonaws.com/images/san-diego.jpg',
-    'http://skylarsch.com.s3.amazonaws.com/images/boats.jpg',
-    'http://skylarsch.com.s3.amazonaws.com/images/bridge.jpg'
+    '/images/headers/san-diego-blur.jpg',
+    '/images/headers/boats-blur.jpg',
+    '/images/headers/bridge-blur.jpg'
   ];
 
   var url_string = 'url("' + urls[Math.floor(Math.random()*urls.length)] + '")';

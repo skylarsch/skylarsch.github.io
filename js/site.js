@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 // Disabled paralax scroll because performance sucks on a rMBP
   // $(window).scroll(perform_paralax_scroll);
+  perform_bottom_link_scroll();
   $(window).scroll(perform_bottom_link_scroll);
 });
 

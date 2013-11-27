@@ -2,7 +2,9 @@ $(document).ready(function(){
   load_header_image();
   bind_to_contact();
 
-  $(window).scroll(perform_paralx_scroll);
+// Disabled paralax scroll because performance sucks on a rMBP
+  // $(window).scroll(perform_paralax_scroll);
+  $(window).scroll(perform_bottom_link_scroll);
 });
 
 function bind_to_contact() {
@@ -27,7 +29,7 @@ function _contact_hover_color() {
 }
 
 // performs the paralx scroll for the image header
-function perform_paralx_scroll() {
+function perform_paralax_scroll() {
   var offset = $(document).scrollTop();
   var height = parseInt($('div.header_image').css('height'));
   var max_offset = height;
@@ -44,6 +46,22 @@ function perform_paralx_scroll() {
   if (window.chrome !== undefined) {
     var saturate = 100 - (100 * percent);
     $('div#paralax_header').css('-webkit-filter', 'saturate(' + saturate + '%)');
+  }
+}
+
+function perform_bottom_link_scroll() {
+  if (window.footer_offset_top == undefined) {
+    window.footer_offset_top = $('footer').offset().top;
+  }
+  var bottom_bar = $('div.bottom_info');
+
+  var window_scroll = $(window).scrollTop() + $(window).height();
+  var offset = window.footer_offset_top + bottom_bar.height();
+
+  if (window_scroll > offset) {
+    bottom_bar.css('position', 'relative');
+  } else {
+    bottom_bar.css('position', 'fixed');
   }
 }
 

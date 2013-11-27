@@ -62,6 +62,33 @@ namespace :post do
     end
   end
 
+  desc "Edit an existing post"
+  task :edit, :title do |t, args|
+    title = args[:title]
+    editor = config["editor"]
+
+    if title.nil? or title.empty?
+      raise "Can't open a post without a title"
+    end
+
+    filename = file_name_title(title)
+
+    posts = Dir.glob("_posts/*-#{filename}.md")
+    if posts.count == 1
+      `open -a #{editor} #{posts[0]}`
+    else
+      drafts = Dir.glob("_drafts/#{filename}.md")
+      if drafts.count == 1
+        `open -a #{editor} #{drafts[0]}`
+      else 
+        puts "Found..."
+        puts "Posts: #{posts}"
+        puts "Drafts: #{drafts}"
+      end
+    end
+  end
+
+  desc "Publish a draft post"
   task :publish, :title do |t, args|
     title = args[:title]
     if title.nil? or title.empty?

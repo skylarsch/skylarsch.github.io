@@ -19,6 +19,7 @@ function setup_project_page() {
       repos.sort(GH.repo_compare);
       GHD.group_draw(key, repos);
     }
+    perform_bottom_link_scroll();
   });
 }
 

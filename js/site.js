@@ -51,10 +51,13 @@ function perform_paralax_scroll() {
 }
 
 function perform_bottom_link_scroll() {
+  if (window.footer_offset_top == undefined) {
+    window.footer_offset_top = $('footer').offset().top;
+  }
   var bottom_bar = $('div.bottom_info');
 
   var window_scroll = $(window).scrollTop() + $(window).height();
-  var offset = $('footer').offset().top; + bottom_bar.height();
+  var offset = window.footer_offset_top + bottom_bar.height();
 
   if (window_scroll > offset) {
     bottom_bar.css('position', 'relative');

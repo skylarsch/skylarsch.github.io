@@ -18,12 +18,15 @@ end
 def file_name_title(title)
   title.gsub(/(\'|\!|\?|\:|\s\z)/,"").gsub(/\s/,"-").downcase
 end
+def parse_title(title)
+  title
+end
 
-namespace :post do 
+namespace :post do
 
   desc "Create a new post"
   task :new, :title do |t, args|
-    title = args[:title]
+    title = parse_title(args[:title])
     editor = config["editor"]
 
     if title.nil? or title.empty?
@@ -44,7 +47,7 @@ namespace :post do
 
   desc "Create a new draft"
   task :draft, :title do |t, args|
-    title = args[:title]
+    title = parse_title(args[:title])
     editor = config["editor"]
 
     if title.nil? or title.empty?
@@ -64,7 +67,7 @@ namespace :post do
 
   desc "Edit an existing post"
   task :edit, :title do |t, args|
-    title = args[:title]
+    title = parse_title(args[:title])
     editor = config["editor"]
 
     if title.nil? or title.empty?
@@ -80,7 +83,7 @@ namespace :post do
       drafts = Dir.glob("_drafts/#{filename}.md")
       if drafts.count == 1
         `open -a #{editor} #{drafts[0]}`
-      else 
+      else
         puts "Found..."
         puts "Posts: #{posts}"
         puts "Drafts: #{drafts}"
@@ -90,7 +93,7 @@ namespace :post do
 
   desc "Publish a draft post"
   task :publish, :title do |t, args|
-    title = args[:title]
+    title = parse_title(args[:title])
     if title.nil? or title.empty?
       raise "Please add a title to your post."
     end
@@ -116,7 +119,7 @@ namespace :post do
   end
 
   task :link, :title, :link do |t, args|
-    title = args[:title]
+    title = parse_title(args[:title])
     link = args[:link]
     editor = config["editor"]
 

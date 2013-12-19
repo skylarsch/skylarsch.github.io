@@ -19,13 +19,16 @@ def file_name_title(title)
   title.gsub(/(\'|\!|\?|\:|\s\z)/,"").gsub(/\s/,"-").downcase
 end
 def parse_title(title)
-  title
+  title.rstrip.lstrip
 end
 
 namespace :post do
 
   desc "Create a new post"
   task :new, :title do |t, args|
+    if !args[:title] || args[:title].empty?
+      raise "Please add a title to your post."
+    end
     title = parse_title(args[:title])
     editor = config["editor"]
 

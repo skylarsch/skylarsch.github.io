@@ -1,6 +1,7 @@
 require 'rake'
 require 'yaml'
 require 'fileutils'
+require 'grit'
 
 config = YAML.load_file("_config.yml")
 
@@ -143,5 +144,19 @@ namespace :post do
     if editor && !editor.empty?
       `open -a #{editor} _posts/#{filename}`
     end
+  end
+end
+
+task :publish do
+  puts "Publishing"
+  repo = Grit::Repo.new(Dir.pwd)
+  files = repo.status.files.select { |k,v| (v.type =~ /(M|A)/ || v.untracked) }
+  new_posts = files.select { |f| f =~ /_posts/ }
+  if new_posts.count > 0
+    new_posts.each { |k,v| repo.add(k) }
+    repo.commit_index("New Post")
+    puts `git push origin master`
+  else
+    puts "No new posts to publish"
   end
 end

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "iOS & Custom Designs"
+title: "iOS and Custom Designs"
 date: 2013-04-16 00:02:06
 ---
 

@@ -62,11 +62,11 @@ pre {
   margin: 0 0 40px 0;
 }
 .post .title {
-  font-size: 24px; 
+  font-size: 24px;
 }
 .post .title a {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
 }
 .post .meta {
   color: #CBCBCB;
@@ -107,10 +107,19 @@ footer {
   border: solid 0 #EEEEEE;
   border-top-width: 2px;
   background-color: #EAEAEA;
+  z-index: 3;
 }
 footer .content {
+  padding-top: 0 !important;
   margin: 0 auto 0 auto;
   max-width: 600px;
+}
+footer .links {
+  border: 0px solid #CDCDCD;
+  border-bottom-width: 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 footer .avitar {
   background-image: url("http://www.gravatar.com/avatar/9c08af7fde2b7ac630ea1f1ce412715e.jpg?s=256");
@@ -267,17 +276,6 @@ footer .open-sky {
  */
 .bottom_info {
   text-align: center;
-  background-color: #EAEAEA;
-  min-height: 30px;
-  color: #555;
-  position: fixed;
-  bottom: 0;
-  z-index: 20;
-  width: 100%;
-  padding-top: 10px;
-  border: 0px solid #222;
-  border-top-width: 1px;
-  opacity: 0.95;
 }
 .bottom_info i {
   margin-left: 20px;

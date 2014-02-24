@@ -32,9 +32,7 @@ I think this attitude is wrong.  iOS runs on a device that's resource constraine
 
 I hear people say they want their code to be beautiful.  In most cases, this means shorter syntax, less characters, and clever tricks.  I don't think this is correct.  To me, beautiful code should be about being a good citizen on the platform.  Beautiful code should do what it needs to do, without exploding, then GTFO.
 
-Please, make your code readable, and easy to mentally parse.
-
-But don't bring design patterns from another language just because they look cool.  Especially a language that's primarily running on large, plugged in servers.  Looking at you Ruby.  For most developers, you're not writing code so you can sell the source code.  Instead you're writing code that's going to be compiled, and deployed to a device.
+Please, make your code readable, and easy to mentally parse.  But don't bring design patterns from another language just because they look cool.  Especially a language that's primarily running on large, plugged in servers.  Looking at you Ruby.  For most developers, you're not writing code so you can sell the source code.  Instead you're writing code that's going to be compiled, and deployed to a device.
 
 I can guarantee you that the average user doesn't give two craps about your source code.  They care that your app does what you said it did.  And if the app does it's job fast, and without draining battery.  That's even better.
 

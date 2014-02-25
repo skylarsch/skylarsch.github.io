@@ -28,7 +28,7 @@ There is an [issue on Github][1] where [danhd123][2] breaks down how these are s
 
 > Yeah I'm sure. I designed YOLOKit to make your code nice. Performance wasn't a consideration...
 
-I think this attitude is wrong.  iOS runs on a device that's resource constrained.  It's CPU is decent (A7), but it's RAM constrained.  iOS never pages to disk so everything has to fit into memory.  Every time the CPU spins up it sucks down the precious battery life.  Even Mac is moving towards portable.  And while we're not as constrained on OS X, there is still battery life and CPU cycles to consider.  Heck 10.9 shames the apps in the menu bar that aren't sipping at resources.
+I think this attitude is wrong.  iOS runs on a device that's resource constrained.  Its CPU is decent (A7), but it's RAM constrained.  iOS never pages to disk so everything has to fit into memory.  Every time the CPU spins up it sucks down the precious battery life.  Even Mac is moving towards portable.  And while we're not as constrained on OS X, there is still battery life and CPU cycles to consider.  Heck 10.9 shames the apps in the menu bar that aren't sipping at resources.
 
 I hear people say they want their code to be beautiful.  In most cases, this means shorter syntax, less characters, and clever tricks.  I don't think this is correct.  To me, beautiful code should be about being a good citizen on the platform.  Beautiful code should do what it needs to do, without exploding, then GTFO.
 

@@ -36,6 +36,11 @@ Please, make your code readable, and easy to mentally parse.  But don't bring de
 
 I can guarantee you that the average user doesn't give two craps about your source code.  They care that your app does what you said it did.  And if the app does it's job fast, and without draining battery.  That's even better.
 
+***
+
+_Edit:_  I'm not saying that you need to have crapy looking code just so things aren't slow.  It's a trade off.  Find a good balance and go with it.
+
+
 [0]: https://github.com/mxcl/YOLOKit
 [1]: https://github.com/mxcl/YOLOKit/issues/7
 [2]: https://github.com/danhd123

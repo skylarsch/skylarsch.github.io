@@ -19,10 +19,11 @@ a:hover {
 
 .content {
   margin: 400px auto 0 auto;
-  z-index: 2;
+  z-index: 1000;
   background-color: inherit;
   position: relative;
   padding: 20px 0 20px 0;
+  -webkit-transform: translate3d(0,0,0);
 }
 .content .body {
   padding: 0 10px 0 10px;
@@ -44,7 +45,7 @@ pre {
   background-repeat: no-repeat;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 0;
 }
 .header_desatruate_blur {
   -webkit-filter: blur(5px);

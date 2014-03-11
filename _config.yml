@@ -3,5 +3,5 @@ pygments: true
 markdown: redcarpet
 post:
   template: post
-editor: Atom
+editor: Mou
 exclude: [Gemfile, Gemfile.lock, Rakefile]

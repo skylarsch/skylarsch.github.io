@@ -33,3 +33,9 @@ Edit: 11-12-13
 After some more investigating and hearing from a few people, I've decided that it's not my problem entirerly.  
 
 **RADAR** rdar://15450840
+
+***
+
+Edit 3-18-14
+
+This issue is fixed in iOS 7.1.  Radar is closed.

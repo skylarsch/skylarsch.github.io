@@ -12,7 +12,7 @@ I just spent the last few minutes browsing through [Stack Overflow iOS][2].  It'
 
 For me, I've reached a point in my career where I'm into the documentation stage.  I've got enough expertise to have a good idea what I'm looking for.  And just enough cleverness to work out what needs to be done by reading that documentation.
 
-There will always be a place for Google and sites like Stack Overflow in my workflow.  Programing is to big of a subject ever scratch the surface of.  But the internet is becoming my second option when I run into a problem.
+There will always be a place for Google and sites like Stack Overflow in my workflow.  Programing is too big of a subject to ever scratch the surface of.  But the internet is becoming my second option when I run into a problem.
 
 
 [1]: http://kapeli.com/dash

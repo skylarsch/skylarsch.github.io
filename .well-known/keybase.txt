@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/skylarsch
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://skylarsch.com
+  * I am skylarsch (https://keybase.io/skylarsch) on keybase.
+  * I have a public key with fingerprint 0A98 EEB9 3667 76EF BFED  A7FC EB5C 9CC8 F793 91D4
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "0a98eeb9366776efbfeda7fceb5c9cc8f79391d4",
+            "host": "keybase.io",
+            "key_id": "eb5c9cc8f79391d4",
+            "uid": "df12f0c08ffa052e96713b4d0f71a700",
+            "username": "skylarsch"
+        },
+        "service": {
+            "hostname": "skylarsch.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396452092,
+    "expire_in": 157680000,
+    "prev": "3b2563e088a4b3f6c8387db947861b134ac4120e2647a337baa758fa88f9e727",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.1
+Comment: https://keybase.io/crypto
+
+yMHoAnicbZFbSBRRGMd31dK2IolApCwdiMpM57ZzZraUJIIik1CQLG2byxkddp1Z
+Z2bXyyKJShkamCVCCkEo2OUhygiFbGutqHwxSSlawQwysqj2oUwtz0i9ROflcP7f
+7///zsc3vDbW5rCfrxpI7cxOabQ/D0X9tsI96QtBTNCkGswVxDxw+ZIVtQzqPl1R
+TcyF4TzHQihwFMMAwEBZkKHEA1mEglPkRJGVAUdxhERjGVi5ZlgOFCPwBsxUNKSh
+h1uRkPof3r9ckGSClHERZ2WZx50k5BhAUAIt4TIgeIDjFmhAXeUrIKINT42X1w2x
+HKvLwJAcUEQkB5d7/4tkiloFcvt0zdREzYtK5abpc1lOs8ZnoVVQcP8JcQuKKqHJ
+kSEAdUPRVMxFIFI0FSuVoDiGdpI4R2ZgsNqn6NCtWIQTMCyOjtUGBlAkJZBOhoI4
+y/K0QMmMyFIskASOBixDCARF8yJNkDgkGRrwFAUEngdOVuZZVuYgIAHqb8BKVcNc
+FPomX2YNpJSpvOnXIVb3MFQSZ7M7bCtXxFi7szlWJf7d6Jl3Cbaz11tX5+JDA29T
+W9oGJ45u75o7fXn8XHPfYk6H8io09nIy/dR69fHWdViJHTQPx8ZfScm/8e3iEBM3
+ET3cc+TZSFNrzKf2C/dGrko/mabeWCM8GErOauW2UJHShfb00W3snd2zRO3TA42H
+PNUfkqdHWzQbU7i56PUOs2djff1cU3hx12xWbfxMzibXmkjxeFHihvrifO/8idKd
+95PH0uYjP76O59Z6HblJb/pzOr9XTX489qDtWnDGd+u42PD+ZmJ0NiGSnRc3khaN
+/i7uDvUyezsW62buZvVfmuoeUoyKvM/+cJf30ZPbfb9eJHnC2vSU8iVwsnpfQyVx
+0NzfUlCwBGIbGe0=
+=sX2M
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/skylarsch
+
+==================================================================

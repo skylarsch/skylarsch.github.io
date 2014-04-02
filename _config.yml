@@ -5,3 +5,4 @@ post:
   template: post
 editor: Mou
 exclude: [Gemfile, Gemfile.lock, Rakefile]
+include: [".well-known"]

@@ -246,30 +246,19 @@ footer .open-sky {
 }
 
 /**
- *  Projects GitHub Style
+ *  Projects
  */
-.gh_group ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
+#projects-header {
+   margin-bottom: 40px;
+ }
+.project img {
+  max-width: 100px;
+  float: left;
+  margin: 0 20px 0 0;
+  border-radius: 26px;
 }
-.gh_group ul li {
-  margin-bottom: 10px;
-  margin-left: 10px;
-  padding-bottom: 10px;
-  border: 0px solid #AAA;
-  border-bottom-width: 1px;
-}
-.gh_group .fork_callout {
-  margin-right: 5px;
-}
-.gh_group .repo_name a {
-  font-weight: bold;
-}
-.gh_group .repo_name span {
-  margin-left: 20px;
-  font-size: 14px;
-  color: #555;
+.proj-sep {
+  margin-bottom: 60px;
 }
 
 /**
@@ -283,4 +272,8 @@ footer .open-sky {
 }
 span.fa {
   margin-left: 8px;
+}
+
+.clear {
+  clear: both;
 }

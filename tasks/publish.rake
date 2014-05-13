@@ -3,7 +3,8 @@ require 'grit'
 desc "Commit new post and push."
 task :publish do
   puts "Publishing"
-  repo = Grit::Repo.new(Dir.pwd)
+  path = File.dirname(__FILE__) + "/../"
+  repo = Grit::Repo.new(path)
   files = repo.status.files.select { |k,v| (v.type =~ /(M|A)/ || v.untracked) }
   new_posts = files.select { |f| f =~ /_posts/ }
   if new_posts.count > 0

@@ -3,6 +3,8 @@ require 'yaml'
 require 'fileutils'
 require 'grit'
 
+Dir.glob(File.dirname(__FILE__) + "/**/*.rake").each { |f| import "#{f}" }
+
 config = YAML.load_file("_config.yml")
 
 def post_content(title, include_date=true, layout="post", opts={})
@@ -144,21 +146,5 @@ namespace :post do
     if editor && !editor.empty?
       `open -a #{editor} _posts/#{filename}`
     end
-  end
-end
-
-task :publish do
-  puts "Publishing"
-  repo = Grit::Repo.new(Dir.pwd)
-  files = repo.status.files.select { |k,v| (v.type =~ /(M|A)/ || v.untracked) }
-  new_posts = files.select { |f| f =~ /_posts/ }
-  if new_posts.count > 0
-    new_images = files.select { |f| f =~ /images\/posts/ }
-    new_posts.each { |k,v| repo.add(k) }
-    new_images.each { |k,v| repo.add(k) }
-    repo.commit_index("New Post")
-    puts `git push origin master`
-  else
-    puts "No new posts to publish"
   end
 end

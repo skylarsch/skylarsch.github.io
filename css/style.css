@@ -219,6 +219,13 @@ footer .open-sky {
 .archive .post-title span {
   color: #AAA;
 }
+.archive .archive-date {
+  display: inline-block;
+  min-width: 60px;
+}
+.archive .archive-dash {
+  margin-right: 10px;
+}
 
 /**
  *  Contact info

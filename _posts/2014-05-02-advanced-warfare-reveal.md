@@ -8,6 +8,6 @@ I've been a Call of Duty fan since [Call of Duty: Big Red One](http://en.wikiped
 
 Call of Duty: Advanced Warfare is [Sledgehammer Games'](http://en.wikipedia.org/wiki/Sledgehammer_Games) first foray into the COD franchise.  They lent a hand on Ghosts, but this is their game.  And boy does it look good.
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/sFu5qXMuaJU" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/sFu5qXMuaJU" allowfullscreen></iframe>
 
-I'm excited to see what having 3 studios on a 3 year cycle can do. 
+I'm excited to see what having 3 studios on a 3 year cycle can do.

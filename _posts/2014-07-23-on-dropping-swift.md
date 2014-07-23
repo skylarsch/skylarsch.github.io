@@ -11,3 +11,7 @@ It's a really cool project and I've got some awesome calibrators.  I'm hoping it
 This decision was spurred on by looking at some of my old Objective-C code.  Not the awful stuff I wrote last week, but the truly awful stuff I wrote years ago.  Granted the project hadn't been touched in a few years, but it was riddled with bad decisions.  I couldn't belive how bad it was.
 
 I don't want to have that experience every time I have to open up this project.  In the future when I'm more familiar with Swift I may drop some of it into the project.  But for now, I'm going to set down the shiny new nail gun, and pickup the trusty old hammer.
+
+***
+
+I've got a few smaller project I'm still working on in Swift.  These are the projects I'm going to be using to get better.

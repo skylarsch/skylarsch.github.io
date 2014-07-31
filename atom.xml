@@ -1,5 +1,4 @@
 ---
-layout: nil
 ---
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -14,7 +13,7 @@ layout: nil
     <email>me@skylarsch.com</email>
   </author>
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit: 20 %}
   <entry>
     <id>http://skylarsch.com{{ post.id }}</id>
     <link type="text/html" rel="alternate" href="http://skylarsch.com{{ post.url }}"/>

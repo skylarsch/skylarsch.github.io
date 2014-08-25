@@ -1,9 +1,7 @@
 $(document).ready(function(){
   load_header_image();
   bind_to_contact();
-
-// Disabled paralax scroll because performance sucks on a rMBP
-  // $(window).scroll(perform_paralax_scroll);
+  bind_to_post_image();
 });
 
 function bind_to_contact() {
@@ -58,4 +56,18 @@ function load_header_image() {
 
   var url_string = 'url("' + urls[Math.floor(Math.random()*urls.length)] + '")';
   $('div.header_image').css('background-image', url_string);
+}
+
+function bind_to_post_image() {
+  $(".post img").click(function(evt) {
+    show_full_screen_image($(this).attr('src'));
+  });
+}
+
+function show_full_screen_image(src) {
+  if (src.match('^http(s?)://')) {
+    window.location.href = src;
+  } else {
+    window.location.href = window.location.origin + src
+  }
 }

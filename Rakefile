@@ -34,6 +34,7 @@ namespace :post do
     end
     title = parse_title(args[:title])
     editor = config["editor"]
+    preview = config["preview"]
 
     if title.nil? or title.empty?
       raise "Please add a title to your post."
@@ -48,6 +49,9 @@ namespace :post do
     File.write("_posts/#{filename}", post_content(title))
     if editor && !editor.empty?
       `open -a #{editor} _posts/#{filename}`
+    end
+    if preview && !preview.empty?
+      `open -a #{preview} _posts/#{filename}`
     end
   end
 

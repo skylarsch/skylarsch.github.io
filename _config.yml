@@ -4,5 +4,6 @@ markdown: redcarpet
 post:
   template: post
 editor: 'Writer\ Pro'
+preview: 'Marked\ 2'
 exclude: [Gemfile, Gemfile.lock, Rakefile, tasks]
 include: [".well-known"]

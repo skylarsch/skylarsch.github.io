@@ -7,3 +7,5 @@ editor: 'Writer\ Pro'
 preview: 'Marked\ 2'
 exclude: [Gemfile, Gemfile.lock, Rakefile, tasks]
 include: [".well-known"]
+description: "I'm a developer, maker, and enjoyer of fine thing.  These are my thoughts."
+hostname: 'skylarsch.com'

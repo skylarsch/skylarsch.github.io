@@ -1,0 +1,10 @@
+<div class='project'>
+  <a href='{{ project.url }}'>
+    <img class='icon' src='{{ project.icon }}'>
+    <h3>{{ project.name }}</h3>
+    <div class='desc'>
+      {{ project.content | markdownify }}
+    </div>
+  </a>
+</div>
+<div class='clear proj-sep'></div>

@@ -5,7 +5,7 @@ post:
   template: post
 collections:
   - projects
-editor: 'Writer\ Pro'
+editor: 'iA\ Writer\ Pro'
 preview: 'Marked\ 2'
 exclude: [Gemfile, Gemfile.lock, Rakefile, tasks]
 include: [".well-known"]

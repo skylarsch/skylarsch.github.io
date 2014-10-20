@@ -1,0 +1,24 @@
+<div class="post">
+
+  <div class="meta">
+    {% if is_index != 1 %}
+      <a href="/">
+        <div class="home_link">
+          <i class="fa fa-home"></i>
+        </div>
+      </a>
+    {% endif %}
+    <div class="inner-meta">{{ post.date | date_to_string }}</div>
+    <div class="clear"></div>
+  </div>
+
+  <div class="title">
+    {% if post.link %}
+      <a href="{{ post.link }}">{{ post.title }} &#8594;</a>
+    {% else %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
+  </div>
+
+  <div class="body">{{ post.content | markdownify }}</div>
+</div>

@@ -1,0 +1,299 @@
+---
+---
+
+html {
+  margin: 0;
+}
+body {
+  background-color: #FFFFFF;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica ,sans-serif;
+  color: #111;
+}
+a {
+  color: #444;
+  text-decoration: none;
+  &:hover {
+    color: inherit;
+  }
+}
+
+/**
+ *  Header Content
+ */
+div.header {
+  #header-image {
+    background: url(/images/headers/san-diego-blur.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 320px;
+  }
+}
+
+.content {
+  margin: 0 auto 0 auto;
+  z-index: 1000;
+  background-color: inherit;
+  position: relative;
+  padding: 20px 0 20px 0;
+  -webkit-transform: translate3d(0,0,0);
+  .body {
+    padding: 0 10px 0 10px;
+    max-width: 580px;
+    margin: 0 auto 0 auto;
+  }
+}
+
+/**
+ *  Code Style
+ */
+pre {
+  max-width: 560px;
+  overflow: scroll;
+  border: 1px #DDDDDD solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/**
+ *  Post
+ */
+.post {
+  margin: 0 0 40px 0;
+  .title {
+    font-size: 24px;
+    a {
+      color: black;
+      text-decoration: none;
+      transition: all .2s ease-in-out;
+      &:hover {
+        color: #777;
+      }
+    }
+  }
+  .meta {
+    color: #CBCBCB;
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+    .inner-meta {
+      padding-top: 9px;
+      float: left;
+    }
+  }
+  .body {
+    font-family: Garamond, Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    img {
+      max-width: 400px;
+      display: block;
+      margin: 10px auto 10px auto;
+      padding: 10px 0 10px 0;
+      border: solid 5px #EEEEEE;
+      border-left-width: 0;
+      border-right-width: 0;
+    }
+    blockquote {
+      border: solid 0 #EEEEEE;
+      border-left-width: 5px;
+      padding-left: 20px;
+    }
+    a {
+      color: #444;
+      text-decoration: underline;
+      transition: all .2s ease-in-out;
+      &:hover {
+        color: #8D1C14;
+      }
+    }
+  }
+  hr {
+    border-style: none;
+    height: 2px;
+    background-color: #EAEAEA;
+  }
+}
+
+/**
+ *  Footer
+ */
+footer {
+  border: solid 0 #EEEEEE;
+  border-top-width: 2px;
+  background-color: #EAEAEA;
+  z-index: 3;
+  .content {
+    padding-top: 0 !important;
+    margin: 0 auto 0 auto;
+    max-width: 600px;
+  }
+  .links {
+    border: 0px solid #CDCDCD;
+    border-bottom-width: 1px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .avitar {
+    background-image: url("http://www.gravatar.com/avatar/9c08af7fde2b7ac630ea1f1ce412715e.jpg?s=256");
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 20px;
+  }
+  .bio {
+    font-family: Helvetica ,sans-serif;
+    float: left;
+    width: 230px;
+    font-weight: 200px;
+    font-size: 14px;
+    font-style: italic;
+    color: #656565;
+    margin: 0 10px 0 10px;
+  }
+  .info {
+    float: left;
+    .name {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .link {
+      margin-bottom: 2px;
+    }
+  }
+  .open-sky {
+    float: right;
+  }
+}
+
+/**
+ *  Home Button
+ */
+.home_icon {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  position: fixed;
+  right: 20px;
+  top: 50px;
+}
+
+.home_link {
+  background-color: inherit;
+  font-size: 22px;
+  color: #CCC;
+  background-size: 50%;
+  width: 28px;
+  height: 28px;
+  float: left;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  border: solid 2px #CCC;
+  border-radius: 16px;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: #888;
+    border-color: #888;
+  }
+  i {
+    padding-left: 4px;
+  }
+}
+
+.clear {
+  clear: both;
+}
+
+/**
+ *  Archive
+ */
+.archive_link {
+  text-align: center;
+}
+.archive_title {
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+.archive {
+  .year {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0 10px 0;
+  }
+  .post-title {
+    span {
+      color: #AAA;
+    }
+  }
+  .archive-date {
+    display: inline-block;
+    min-width: 60px;
+  }
+  .archive-dash {
+    margin-right: 10px;
+  }
+}
+
+/**
+ *  Contact info
+ */
+.contact {
+  .letters_list {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .letter {
+    float: left;
+  }
+  .end-contact {
+    clear: both;
+  }
+  i {
+    margin-right: 6px;
+    color: #333;
+    &:hover {
+      color: #AAA;
+    }
+  }
+}
+.callout {
+  color: #444;
+}
+
+/**
+ *  Projects
+ */
+#projects-header {
+   margin-bottom: 40px;
+ }
+.project img {
+  max-width: 100px;
+  float: left;
+  margin: 0 20px 0 0;
+  border-radius: 26px;
+}
+.proj-sep {
+  margin-bottom: 60px;
+}
+
+/**
+ *  Info Bar
+ */
+.bottom_info {
+  text-align: center;
+}
+.bottom_info i {
+  margin-left: 20px;
+}
+span.fa {
+  margin-left: 8px;
+}
+.clear {
+  clear: both;
+}

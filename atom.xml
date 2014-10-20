@@ -4,10 +4,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title>Skylar Schipper | Blog</title>
-  <link href="http://skylarsch.com/"/>
-  <link type="application/atom+xml" rel="self" href="http://skylarsch.com/atom.xml"/>
+  <link href="http://{{ site.hostname }}/"/>
+  <link type="application/atom+xml" rel="self" href="http://{{ site.hostname }}/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://skylarsch.com/</id>
+  <id>http://{{ site.hostname }}/</id>
   <author>
     <name>Skylar Schipper</name>
     <email>me@skylarsch.com</email>
@@ -15,14 +15,14 @@
 
   {% for post in site.posts limit: 20 %}
   <entry>
-    <id>http://skylarsch.com{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://skylarsch.com{{ post.url }}"/>
+    <id>http://{{ site.hostname }}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://{{ site.hostname }}{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <author>
       <name>Skylar Schipper</name>
-      <uri>http://skylarsch.com/</uri>
+      <uri>http://{{ site.hostname }}/</uri>
     </author>
     <content type="html">{{ post.content | xml_escape }}</content>
   </entry>

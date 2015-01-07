@@ -1,0 +1,11 @@
+#!/bin/bash -l
+
+ruby --version
+
+bundle install --without development --binstubs
+
+rbenv rehash
+
+LOC=$(pwd)
+
+$LOC/bin/jekyll build

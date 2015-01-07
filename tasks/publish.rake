@@ -12,6 +12,7 @@ task :publish do
     new_posts.each { |k,v| repo.add(k) }
     new_images.each { |k,v| repo.add(k) }
     repo.commit_index("New Post")
+    puts `git push web master`
     puts `git push origin master`
   else
     puts "No new posts to publish"

@@ -6,4 +6,4 @@ date: 2015-05-11 19:02:58
 
 This is how you burn a boss.
 
-![Burn the Archon](http://i.imgur.com/Z4SzXhC.gifv)
+![Burn the Archon](http://i.imgur.com/Z4SzXhC.gif)

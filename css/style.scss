@@ -304,3 +304,32 @@ span.fa {
  div.not_found {
    margin: 50px 0;
  }
+
+/**
+ *
+ */
+div.gaming {
+  div.about {
+    margin: 50px 0 0 0;
+  }
+  div.setup {
+    padding: 20px 0 20px 0;
+  }
+  ul {
+    padding: 0;
+    li {
+      margin: 0 0 12px 0;
+      list-style-type: none;
+      span.comp {
+        color: #676767;
+      }
+      a {
+        color: #121212;
+        &:after {
+          color: #CFCFCF;
+          content: '➤'
+        }
+      }
+    }
+  }
+}

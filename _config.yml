@@ -1,5 +1,5 @@
 name: Skylar Schipper
-highlighter: true
+highlighter: pygments
 markdown: redcarpet
 post:
   template: post

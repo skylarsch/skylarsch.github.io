@@ -3,28 +3,32 @@ layout: main
 title: Archive
 ---
 
-<a href="/">
-  <div class="home_link">
-    <i class="fa fa-home"></i>
+<div class='page-header clearfix home_link'>
+  <a href='/'>
+    <i class='fa fa-home'></i>
+  </a>
+  <h1>Previous Posts</h1>
+</div>
+
+<div class='row'>
+  <div class='col-md-12'>
+    <div class='archive'>
+      {% for post in site.posts %}
+        {% unless post.next %}
+          <div class='archive__year'>{{ post.date | date: '%Y' }}</div>
+        {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+            <div class='archive__year'>{{ post.date | date: '%Y' }}</div>
+          {% endif %}
+        {% endunless %}
+        {% if post.link == nil %}
+          <div class='archive__post-title'>
+            <span class='archive__post-date'>{{ post.date | date:"%b %d" }}</span> <span class='archive__post-dash'>&mdash;</span> <a href="{{ post.url }}">{{ post.title }}</a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
   </div>
-</a>
-<div class="archive_title">Previous Posts</div>
-<div class="clear"></div>
-<div class="archive">
-  {% for post in site.posts %}
-    {% unless post.next %}
-      <div class="year">{{ post.date | date: '%Y' }}</div>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <div class="year">{{ post.date | date: '%Y' }}</div>
-      {% endif %}
-    {% endunless %}
-    {% if post.link == nil %}
-      <div class="post-title">
-        <span class="archive-date">{{ post.date | date:"%b %d" }}</span> <span class="archive-dash">&mdash;</span> <a href="{{ post.url }}">{{ post.title }}</a>
-      </div>
-    {% endif %}
-  {% endfor %}
 </div>

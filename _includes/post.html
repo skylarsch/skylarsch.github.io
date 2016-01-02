@@ -1,24 +1,50 @@
-<div class="post">
-
-  <div class="meta">
-    {% if is_index != 1 %}
-      <a href="/">
-        <div class="home_link">
-          <i class="fa fa-home"></i>
+<div class='post'>
+  <!-- Post Title -->
+  <div class='row'>
+    <div class='col-md-8 col-md-offset-2 col-sm-12 clearfix'>
+      {% if is_index != 1 %}
+        <div class='post__home-link'>
+          <a href='/'>
+            <i class='fa fa-home post__home-link__icon'></i>
+          </a>
         </div>
-      </a>
-    {% endif %}
-    <div class="inner-meta">{{ post.date | date_to_string }}</div>
-    <div class="clear"></div>
+      {% endif %}
+      <div class='post__title'>
+        {% if post.link %}
+          <a href='{{ post.link }}'>{{ post.title }} &#8594;</a>
+        {% else %}
+          <a href='{{ post.url }}'>{{ post.title }}</a>
+        {% endif %}
+      </div>
+    </div>
   </div>
 
-  <div class="title">
-    {% if post.link %}
-      <a href="{{ post.link }}">{{ post.title }} &#8594;</a>
-    {% else %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endif %}
+  <!-- Post Metadata -->
+  <div class='row'>
+    <div class='col-md-8 col-md-offset-2 col-sm-12'>
+      <div class='post__metadata'>
+        <span class='post__metadata__date'>{{ post.date | date_to_string }}</span>
+      </div>
+    </div>
   </div>
 
-  <div class="body">{{ post.content | markdownify }}</div>
+  <!-- Post Body -->
+  <div class='row'>
+    <div class='col-md-8 col-md-offset-2 col-sm-12'>
+      <div class='post__body'>
+        {{ post.content | markdownify }}
+      </div>
+    </div>
+  </div>
+
+  {% if is_index == 1 %}
+    <div class='row'>
+      <div class='col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1'>
+        <div class='post__divider'>
+
+        </div>
+      </div>
+    </div>
+  {% endif %}
+
 </div>

@@ -1,13 +1,11 @@
 name: Skylar Schipper
-highlighter: pygments
-markdown: redcarpet
 post:
   template: post
 collections:
   - projects
 editor: 'iA\ Writer\ Pro'
 preview: 'Marked\ 2'
-exclude: [Gemfile, Gemfile.lock, Rakefile, tasks, install, vendor, bin]
+exclude: [Gemfile, Gemfile.lock, Rakefile, tasks, install, vendor, bin, config]
 include: [".well-known", ".status"]
 description: "I'm a developer, maker, and enjoyer of fine thing.  These are my thoughts."
 hostname: 'skylarsch.com'

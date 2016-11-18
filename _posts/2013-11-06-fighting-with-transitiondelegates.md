@@ -6,7 +6,7 @@ date: 2013-11-06 10:55:08
 
 I spent a good chunk of my morning fighting with custom UIViewController transitions.  
 
-![Bad Memory](http://skylarsch.com.s3.amazonaws.com/images/bad_memory.png)
+![Bad Memory](//s3.amazonaws.com/skylarsch.com/images/bad_memory.png)
 
 I don't think you have to be a developer to realize that the blue bar shouldn't be going up without going down.  iOS devices have a very limited amount of memory, and that graph isn't helping the situation.  And in this case the app probably would be killed by the system.  Not ideal for creating a great user experience.
 
@@ -18,7 +18,7 @@ When the view controller was dismissed, it's memory was never deallocated and gi
 
 Narrowing the problem down to `self.transitionDelegate = self;` took quite a while, and now I'm creating a new object in the UIViewController and setting that as the transitionDelegate.  Its sole purpose is to return the animation controllers.  A quick build and run, and this is what you get...
 
-![Good Memory](http://skylarsch.com.s3.amazonaws.com/images/good_memory.png)
+![Good Memory](//s3.amazonaws.com/skylarsch.com/images/good_memory.png)
 
 Much better!
 
@@ -30,7 +30,7 @@ Long story short, don't do this `self.transitionDelegate = self;`.  It breaks ma
 
 Edit: 11-12-13
 
-After some more investigating and hearing from a few people, I've decided that it's not my problem entirerly.  
+After some more investigating and hearing from a few people, I've decided that it's not my problem entirely.  
 
 **RADAR** rdar://15450840
 

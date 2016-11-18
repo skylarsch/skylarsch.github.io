@@ -10,18 +10,18 @@ One is the lag compensation in PvP.  A lot of FPS games seem to punish people wi
 
 God Mode for the red bar...
 
-![God Mode Engage](http://i.imgur.com/5vMQ3U0.gif)
+![God Mode Engage](//i.imgur.com/5vMQ3U0.gif)
 
 I don't even know...
 
-![Trade?](http://i.imgur.com/ZG5DdWF.gif)
+![Trade?](//i.imgur.com/ZG5DdWF.gif)
 
 (I think that was a trade.)
 
 Or just terrible spawn logic.
 
-![Spawn](http://i.imgur.com/Idso7hO.gif)
+![Spawn](//i.imgur.com/Idso7hO.gif)
 
 But even with all that, moments like this one keep me coming back for more.
 
-![Collateral](http://i.imgur.com/8Brv6Ui.gif)
+![Collateral](//i.imgur.com/8Brv6Ui.gif)

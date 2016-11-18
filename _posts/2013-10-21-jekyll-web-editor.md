@@ -12,7 +12,7 @@ But there has been an interesting development with GitHub pages.  They automatic
 
 How does this work?
 
-![Safari Editor](http://skylarsch.com.s3.amazonaws.com/images/pages-editor.png)
+![Safari Editor](//s3.amazonaws.com/skylarsch.com/images/pages-editor.png)
 
 When "save" the new file from GitHub's web editor then you're really committing to the repo.  This triggers GitHub pages build script and it rebuilds your site and publishes the changes.
 
